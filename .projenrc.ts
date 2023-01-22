@@ -1,15 +1,21 @@
-import { cdk } from 'projen';
-const project = new cdk.JsiiProject({
-  author: 'Victor Korzunin',
-  authorAddress: 'user@domain.com',
-  defaultReleaseBranch: 'main',
-  name: 'cdktf-app-ts',
-  projenrcTs: true,
-  repositoryUrl: 'https://github.com/user/cdktf-app-ts.git',
+import { cdk } from "projen";
 
-  // deps: [],                /* Runtime dependencies of this module. */
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-  // devDeps: [],             /* Build dependencies for this module. */
-  // packageName: undefined,  /* The "name" in package.json. */
+const project = new cdk.JsiiProject({
+  author: "Victor Korzunin",
+  authorAddress: "ifloydrose@gmail.com",
+  defaultReleaseBranch: "main",
+  name: "projen-cdktf-app-ts",
+  repositoryUrl: "https://github.com/floydspace/projen-cdktf-app-ts.git",
+  packageName: "projen-cdktf-app-ts",
+  deps: ["projen"],
+  prettier: true,
+  eslint: true,
+  projenrcTs: true,
+  clobber: false,
+  depsUpgrade: false,
+  bundledDeps: ["fs-extra"],
+  devDeps: ["@types/fs-extra"],
+  peerDeps: ["projen"],
 });
+
 project.synth();

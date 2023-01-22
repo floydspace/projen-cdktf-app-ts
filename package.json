@@ -1,5 +1,6 @@
 {
   "name": "projen-cdktf-app-ts",
+  "description": "CDK for Terraform (CDKTF) app Projen project in TypeScript",
   "repository": {
     "type": "git",
     "url": "https://github.com/floydspace/projen-cdktf-app-ts.git"

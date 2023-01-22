@@ -1,4 +1,11 @@
-## CDK for Terraform (CDKTF) app project in TypeScript
+# 📦 projen-cdktf-app-ts
+
+CDK for Terraform (CDKTF) app Projen project in TypeScript
+
+[![npm version](https://img.shields.io/npm/v/projen-cdktf-app-ts?color=brightgreen&label=npm%20package)](https://www.npmjs.com/package/projen-cdktf-app-ts)
+[![npm downloads](https://img.shields.io/npm/dm/projen-cdktf-app-ts)](https://www.npmjs.com/package/projen-cdktf-app-ts)
+[![build status](https://img.shields.io/github/actions/workflow/status/floydspace/projen-cdktf-app-ts/build.yml?label=build)](https://github.com/floydspace/projen-cdktf-app-ts/actions/workflows/build.yml)
+[![release status](https://img.shields.io/github/actions/workflow/status/floydspace/projen-cdktf-app-ts/release.yml?label=release)](https://github.com/floydspace/projen-cdktf-app-ts/actions/workflows/release.yml)
 
 Welcome to the home of
 [`projen-cdktf-app-ts`](https://www.npmjs.com/package/projen-cdktf-app-ts)!

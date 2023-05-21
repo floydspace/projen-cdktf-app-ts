@@ -8,7 +8,6 @@ const project = new cdk.JsiiProject({
   repositoryUrl: "https://github.com/floydspace/projen-cdktf-app-ts.git",
   packageName: "projen-cdktf-app-ts",
   description: "CDK for Terraform (CDKTF) app Projen project in TypeScript",
-  deps: ["projen"],
   prettier: true,
   eslint: true,
   projenrcTs: true,
@@ -16,7 +15,7 @@ const project = new cdk.JsiiProject({
   depsUpgrade: false,
   bundledDeps: ["fs-extra"],
   devDeps: ["@types/fs-extra"],
-  peerDeps: ["projen"],
+  peerDeps: ["projen@>=0.67.10 <1.0.0"],
 });
 
 project.synth();

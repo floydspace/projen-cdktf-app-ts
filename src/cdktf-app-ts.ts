@@ -100,7 +100,7 @@ export class CdktfTypeScriptApp extends TypeScriptAppProject {
     this.npmignore?.exclude(".cdktf.staging/");
 
     if (this.tsconfig) {
-      this.tsconfig.exclude.push(this.cdktfConfig.cdktfOut);
+      this.tsconfig.addExclude(this.cdktfConfig.cdktfOut);
     }
 
     this.addDevDeps("ts-node");

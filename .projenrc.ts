@@ -10,6 +10,9 @@ const project = new cdk.JsiiProject({
   description: "CDK for Terraform (CDKTF) app Projen project in TypeScript",
   prettier: true,
   eslint: true,
+  jestOptions: {
+    configFilePath: "jest.config.json",
+  },
   projenrcTs: true,
   clobber: false,
   depsUpgrade: false,
